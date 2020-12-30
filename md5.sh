@@ -6,9 +6,8 @@ dosomething()
  a=`grep 'FAILED' /tmp/md5.check|awk -F':' '{print $1}'`
  echo -e "\033[32m$a\033[0m changed !"
 # if($a=="halo.mv.db")cd /.halo/db;
-git add $a;git commit -m "update";git push origin master
-   echo -e "备份成功~"
-  #echo -e "\033[32m$a\033[0m changed !" | mail -s "这是真的可以发送邮件了哦" 291727935@qq.com
+cd ~/.halo/db;git add .;git commit -m "update";git push origin master
+   echo -e "\033[32m$a\033[0m changed !" | mail -s "数据库文件备份" 291727935@qq.com
 rm -f /tmp/html.md5
 }
 
