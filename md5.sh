@@ -8,7 +8,7 @@ dosomething()
 # if($a=="halo.mv.db")cd /.halo/db;
 git add $a;git commit -m "update";git push origin master
    echo -e "备份成功~"
- #echo -e "\033[32m$a\033[0m changed !" | mail -s "这是真的可以发送邮件了哦" 291727935@qq.com
+  #echo -e "\033[32m$a\033[0m changed !" | mail -s "这是真的可以发送邮件了哦" 291727935@qq.com
 rm -f /tmp/html.md5
 }
 
