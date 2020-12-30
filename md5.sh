@@ -14,7 +14,7 @@ rm -f /tmp/html.md5
 
 find_file(){
 
-  b=`find ~/.halo/db  -type f|xargs md5sum > /tmp/html.md5`
+  b=`find ~/.halo/db/halo.mv.db  -type f|xargs md5sum > /tmp/html.md5`
  echo $b
 
 }
